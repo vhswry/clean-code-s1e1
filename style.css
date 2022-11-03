@@ -73,7 +73,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for="new-task"] {
+label:not(.task) {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -83,7 +83,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+input.task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -96,12 +96,12 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+input.task:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+label:not(.task) {
   display: block;
   margin: 0 0 20px;
 }
@@ -136,7 +136,7 @@ li>label {
   width: 226px;
 }
 
-li>input[type="text"] {
+li>input.task {
   width: 226px
 }
 
